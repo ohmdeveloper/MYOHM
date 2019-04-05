@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-speech-recognition-feat-siri",
+  "version": "2.1.1",
+  "description": "Cordova Plugin Speech Recognition feat. Siri",
+  "cordova": {
+    "id": "cordova-plugin-speech-recognition-feat-siri",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluedesign/speech-recognition-feat-siri.git"
+  },
+  "keywords": [
+    "cordova",
+    "SpeechRecognition",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "SOHKAKUDO Ltd.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bluedesign/speech-recognition-feat-siri/issues"
+  },
+  "homepage": "https://github.com/bluedesign/speech-recognition-feat-siri#readme"
+}

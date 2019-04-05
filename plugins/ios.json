@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.ohm.myohm"
+        },
+        "cordova-plugin-camera": {
+            "CAMERA_USAGE_DESCRIPTION": "Allow MY OHM to access camera",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": "Allow MY OHM to access gallery",
+            "PACKAGE_NAME": "com.ohm.myohm"
+        },
+        "cordova-plugin-contacts": {
+            "CONTACTS_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.ohm.myohm"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ohm.myohm"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ohm.myohm"
+        },
+        "cordova-plugin-privacyscreen": {
+            "PACKAGE_NAME": "com.ohm.myohm"
+        },
+        "cordova-plugin-speech-recognition-feat-siri": {
+            "PACKAGE_NAME": "com.ohm.myohm"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ohm.myohm"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ohm.myohm"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ohm.myohm"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ohm.myohm"
+        }
+    }
+}

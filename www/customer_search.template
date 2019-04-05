@@ -1,0 +1,54 @@
+<script id="customer_Page" type="text/template7">
+{{#if @global.ios}}
+  <div class="navbar">
+    <div class="navbar-inner ">
+      <div class="left sliding">
+      <img src="img/navbar_logo.png" class="nav_bar_logo"/>
+    </div>
+      <div class="center sliding">MY OHM</div>
+       <div class="right sliding">
+      <a href="#" class="link icon-only open-panel menu_icon"> <i class="f7-icons">bars</i></a>
+    </div>
+    </div>
+  </div>
+  {{/if}}
+<div data-page="customerPage" class="page">
+{{#if @global.android}}
+  <div class="navbar">
+    <div class="navbar-inner ">
+      <div class="left sliding">
+      <img src="img/navbar_logo.png" class="nav_bar_logo"/>
+    </div>
+      <div class="center sliding">MY OHM</div>
+       <div class="right sliding">
+      <a href="#" class="link icon-only open-panel menu_icon"> <i class="f7-icons">bars</i></a>
+    </div>
+    </div>
+  </div>
+    {{/if}}
+  <div class="page-content">
+    <div class="content-block">
+      <center><h3 style="color:#000">Step 1: Identify customer.</h3><br/>Scan or enter any tag / Search by customer number or name.</center>
+    <div class="list-block">
+      <ul>
+        <li>
+        <div class="item-content">
+          <div class="item-inner">
+          <div class="item-input">
+            <input type="text" id="search_txt" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+            <a class="button button-fill search_scan_tag"><i class="fa fa-camera " aria-hidden="true"></i></a>
+          </div>
+          </div>
+        </div>
+        </li>
+      </ul>
+    </div> 
+
+    	<div id="search_result" class="search-result-panel">		
+    	</div>
+	   </div>
+	<div class="rma_data_content"></div>
+  </div>
+</div>
+<!-- RMA page close-->
+      

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ohm.myohm" version="1.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>MY OHM</name>
+    <description>
+       Mobile application for accessing OHM ERP
+    </description>
+    <author email="developers@ohm-india.com" href="http://ohm.systems">
+        OHM Mobile Development Team
+    </author>
+    <content src="index.html" />
+    <preference name="permissions" value="none" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="fullscreen" value="false" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="exit-on-suspend" value="false" />
+    <gap:config-file parent="/manifest" platform="android">
+        <application android:debuggable="true" />
+    </gap:config-file>
+    <icon src="www/res/icon/android/ic_launcher-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/ic_launcher-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/ic_launcher-mdpi.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/ic_launcher-hdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/ic_launcher-xhdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xxhdpi" src="www/res/icon/android/ic_launcher-xxhdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xxxhdpi" src="www/res/icon/android/ic_launcher-xxxhdpi.png" />
+    <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
+    <icon gap:platform="ios" height="76" src="www/res/icon/ios/icon-76.png" width="76" />
+    <icon gap:platform="ios" height="120" src="www/res/icon/ios/icon-120.png" width="120" />
+    <icon gap:platform="ios" height="152" src="www/res/icon/ios/icon-152.png" width="152" />
+    <icon gap:platform="ios" height="72" src="www/res/icon/ios/icon-72.png" width="72" />
+    <icon gap:platform="ios" height="100" src="www/res/icon/ios/icon-57-2x.png" width="100" />
+    <icon gap:platform="ios" height="144" src="www/res/icon/ios/icon-72-2x.png" width="144" />
+    <icon gap:platform="ios" height="80" src="www/res/icon/ios/icon-80.png" width="80" />
+    <icon gap:platform="ios" height="40" src="www/res/icon/ios/icon-40.png" width="40" />
+    <icon gap:platform="ios" height="29" src="www/res/icon/ios/icon-29.png" width="29" />
+    <icon gap:platform="ios" height="58" src="www/res/icon/ios/icon-58.png" width="58" />
+    <icon gap:platform="ios" height="50" src="www/res/icon/ios/icon-50.png" width="50" />
+    <icon gap:platform="ios" height="180" src="www/res/icon/ios/icon-180.png" width="180" />
+    <icon gap:platform="ios" height="60" src="www/res/icon/ios/icon-60.png" width="60" />
+    <platform name="ios">
+        <splash height="480" src="www/res/screen/ios/Default~iphone.png" width="320" />
+        <splash height="960" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
+        <splash height="1024" src="www/res/screen/ios/Default-Portrait~ipad.png" width="768" />
+        <splash height="2048" src="www/res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" />
+        <splash height="768" src="www/res/screen/ios/Default-Landscape~ipad.png" width="1024" />
+        <splash height="1536" src="www/res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" />
+        <splash height="1242" src="www/res/screen/ios/Default-Landscape-736h.png" width="2208" />
+        <splash height="1136" src="www/res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" src="www/res/screen/ios/Default-667h.png" width="750" />
+        <splash height="2208" src="www/res/screen/ios/Default-736h.png" width="1242" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <engine name="android" spec="^6.3.0" />
+    <plugin name="cordova-plugin-device" spec="~1.1.3" />
+    <plugin name="cordova-plugin-barcodescanner">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="Allow MY OHM to access camera" />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Allow MY OHM to access gallery" />
+    </plugin>
+    <plugin name="cordova-plugin-privacyscreen" />
+    <plugin name="cordova-plugin-network-information" spec="~1.3.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="~4.0.0" />
+    <plugin name="cordova-plugin-statusbar" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.0" />
+    <plugin name="cordova-plugin-contacts" />
+    <plugin name="cordova-plugin-compat" spec="^1.2.0" />
+</widget>

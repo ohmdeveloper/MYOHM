@@ -1,0 +1,32 @@
+{
+  "name": "com.ohm.myohm",
+  "version": "1.0.7",
+  "displayName": "MY OHM",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-barcodescanner": {
+        "CAMERA_USAGE_DESCRIPTION": "Allow MY OHM to access camera",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "Allow MY OHM to access gallery"
+      },
+      "cordova-plugin-privacyscreen": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-contacts": {},
+      "cordova-plugin-compat": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "^6.3.0",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-device": "~1.1.3",
+    "cordova-plugin-network-information": "~1.3.0",
+    "cordova-plugin-splashscreen": "~4.0.0",
+    "cordova-plugin-whitelist": "~1.3.0"
+  }
+}

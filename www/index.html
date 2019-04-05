@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta http-equiv="Content-Security-Policy"/>
+        <!--meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" /--> 
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />   
+        <title>MYOHM</title>
+         <link rel="stylesheet" href="css/font-awesome.min.css"> 
+         <link rel="stylesheet" href="css/framework7-icons.css"> 
+				 <link rel="stylesheet" type="text/css" href="css/test.css">
+    </head>
+    <body>
+   		<div class="statusbar-overlay"></div>
+		<div class="panel-overlay"></div>
+		<!-- Left panel with reveal effect-->
+		<div class="panel panel-left panel-cover">
+			<div class="content-block">
+				<div class="container">
+					<center><h3 class="server_name"></h3></center>
+					<ul id="dynamic_menu">
+
+					</ul>
+				</div>
+				<div class="user_name"></div>
+			</div>
+		</div>
+		<div class="views">
+			<div class="view view-main">
+				<!-- Top Navbar-->
+				<div class="navbar">
+
+				</div>
+				<!-- end of nav bar-->
+				<div class="pages navbar-through toolbar-through">
+					<div data-page="index" class="page">
+
+					</div>
+				</div>
+			<!-- End of page view-->
+			</div><!--View main end-->
+		</div><!--Views end-->
+
+		<!-- Enter Part details Popup -->
+	    <div class="popup" id="EnterPartDetails">
+	      <div class="navbar">
+	        <div class="navbar-inner">
+	          <div class="left"><a href="#" class="link close-popup law_tag_close"><i class="f7-icons">close</i></a></div>
+	          <div class="right">Part Details</div>
+	        </div>
+	      </div>
+	      <div class="page-content">
+	        <div class="content-block">
+	      <div class="list-block">
+	        <ul>
+	          	<li>
+		          <div class="item-content">
+		          <div class="item-inner">
+		            <div class="item-title label">SKU Number</div>
+		            <div class="item-input">
+		            <input type="text" id="sku_nbr" required>
+		            </div>
+		          </div>
+		          </div>
+		        </li>
+		        <li>
+		          <div class="item-content">
+		          <div class="item-inner">
+		            <div class="item-title label">Size</div>
+		            <div class="item-input">
+		            <input type="text" id="part_size" required>
+		            </div>
+		          </div>
+		          </div>
+		        </li>
+		        <li>
+		          <div class="item-content">
+		          <div class="item-inner">
+		            <div class="item-title label">Description</div>
+		            <div class="item-input">
+		            <input type="text" id="part_desc" required>
+		            </div>
+		          </div>
+		          </div>
+		        </li>
+		       	<li>
+					<div class="item-content">
+					  <div class="item-inner">
+					  <div class="item-title label">Reason</div>
+						<div class="item-input">
+							<div id="sel_reason"></div>
+						</div>
+					  </div>
+					</div>
+			  	</li>
+	            <li>
+		          <div class="item-content">
+		          <div class="item-inner">
+		            <div class="item-title label">Quantity</div>
+		            <div class="item-input">
+		            <input type="number" id="qty" required>
+		            </div>
+		          </div>
+		          </div>
+		        </li>
+		        <li>
+		          <div class="item-content">
+		          <div class="item-inner">
+		            <div class="item-title label">Unit Price</div>
+		            <div class="item-input">
+		            <input type="number" id="unit_price" required>
+		            </div>
+		          </div>
+		          </div>
+		        </li>
+	        </ul>
+	        <center><textarea id="custom_enter_msg" readonly></textarea></center>
+	      </div>
+	      <div class="row">
+	          <div class="col-50" style="border:none">
+	            <center><input type="button" value="Submit" class="button button-fill validate_part" ></center>
+	          </div>
+	          <div class="col-50" style="border:none">
+	            <center><input type="button" value="Close" class="button button-fill close-popup law_tag_close"></center>
+	          </div>
+        	</div>
+	         
+	        </div>
+	      </div>
+	    </div>
+	  <!--  End of Enter Part details Popup -->
+
+		<!-- Enter comment Popup -->
+	    <div class="popup" id="CommentPopup">
+	    	<div class="navbar">
+				<div class="navbar-inner">
+				  <div class="left"><a href="#" class="link close-popup"><i class="fa fa-times" aria-hidden="true" style="color:#fff"></i></a></div>
+				  <div class="center"></span></div>
+				</div>
+			</div>
+	      <div class="page-content">
+	        <div class="content-block">
+	        <center>
+	        	<h2 class="comment_title"></h2>
+	        </center>
+	      	<div class="list-block">
+	      	<input type="hidden" name="" id="link">
+	      	<input type="hidden" name="" id="function">
+	      	<input type="hidden" name="" id="directkey">
+	      	<input type="hidden" name="" id="approvers">
+	        <ul>
+	        	<li class="approver_list">
+	        		<div class="item-content">
+	        			<div class="item-inner">
+							<div class="item-input">
+								<select id="user_list">
+									
+								</select>
+							</div>
+						</div>
+					</div>
+				</li>
+	          	<li>
+		          <div class="item-content">
+		          <div class="item-inner">
+		            <div class="item-input">
+		            <textarea id="comment" placeholder="Enter your comments here"></textarea>
+		            </div>
+		            <button onclick="doSpeechRecognition('R')" class="mic"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+		          </div>
+		          </div>
+		        </li>
+	        </ul>
+	      </div>
+	     <center>
+		      <table width="80%">
+		      	<tr>
+		      		<td align="center">
+		      			<input type="button" value="Submit" class="button button-fill" onclick="comment_handler()">
+		      		</td>
+		      		<td align="center">
+		      			<input type="button"  value="Clear" class="button button-fill clear-comment">
+		      		</td>
+		      	</tr>
+		      </table>
+		   </center>
+	       <center>
+	       		<p class="speak_mic" style="display:none">(Please Speak slowly)</p>
+	       		<img src="img/mic3.gif" class="speak_mic" style="display:none;width:60%">
+	       	</center>
+	        </div>
+	      </div>
+	    </div>
+	  <!--  End of Enter Part details Popup -->
+
+	  <!-- Signature Popup -->
+    <div class="popup" id="SignaturePage">
+      <div class="navbar" style="height:8%">
+        <div class="navbar-inner">
+          <div class="left"><a href="#" class="link close-popup"><i class="fa fa-angle-left" aria-hidden="true"></i>Back to enter more products</a></div>
+          <!--div class="right">Signature</div-->
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="content-block signature_block"> 
+        <input type="hidden" id="url"/>
+          <div id="signatureparent">
+            Sign Here
+            <div id="ohm_signature" style="height:160px;"></div>
+          </div>
+          <div class="list-block delivery_comment">
+            <ul>
+               <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                      <div class="item-input">
+                      <input type="text" id="accepted_by" placeholder="Last Name"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+                <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                      <div class="item-input">
+                      <textarea id="comments" rows="2" placeholder="Comments" style="height: 65px;"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                      <div class="item-input">
+                      <input type="text" id="mail_id" placeholder="Email ID"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>	
+        <div class="row" style="margin-top: -20px;">
+          <div class="col-50" style="border:none">
+            <center><a class="button button-fill clear_signature">Clear</a></center>
+          </div>
+          <div class="col-50" style="border:none">
+            <center><a class="button button-fill accept_signature">Accept</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--  End of Signature Popup -->
+
+		<!-- Enter search Popup -->
+	    <div class="popup" id="SearchPopup">
+	    	<div class="navbar">
+			<div class="navbar-inner">
+			  <div class="left"><a href="#" class="link close-popup"><i class="fa fa-times" aria-hidden="true" style="color:#fff"></i></a></div>
+			  <div class="center">Search by <span class="search_by"></span></div>
+			</div>
+			</div>
+	      <div class="page-content">
+	        <div class="content-block">
+	        <center>
+	        	<h5 class="search_title search_area"></h5>
+	        </center>
+	      	<div class="list-block search_area">
+		      	<input type="hidden" name="" id="slink">
+		      	<input type="hidden" name="" id="sfunction">
+		      	<input type="hidden" name="" id="sdirectkey">
+		        <ul>
+		          	<li>
+			          <div class="item-content">
+			          <div class="item-inner">
+			            <div class="item-input">
+			             <input type="text" id="search_text" placeholder="Search"/>
+			             <button onclick="doSpeechRecognition('S')" class="mic"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+			            </div>
+			          </div>
+			          </div>
+			        </li>
+		        </ul>
+	      </div>
+	      <table width="100%" class="search_area">
+	      	<tr>
+	      		<td align="center" width="50%">
+	      			<input type="button" value="Search" class="button button-fill search_btn">
+	      		</td>
+	      	</tr>
+	      </table>
+	      <center><img src="img/mic3.gif" class="speak_mic" style="display:none;width:100%"></center>
+			<div class="list-block">
+				<ul id="dynamic_search">
+				</ul>
+			</div>
+	        </div>
+	      </div>
+	    </div>
+		<!--  End of search Popup -->
+		
+			<!-- Enter Advance search Popup -->
+	    <div class="popup" id="AdvanceSearchPopup">
+	    	<div class="navbar">
+			<div class="navbar-inner">
+			  <div class="left"><a href="#" class="link close-popup"><i class="fa fa-times" aria-hidden="true" style="color:#fff"></i></a></div>
+			  <div class="center">Search by <span class="search_by"></span></div>
+			</div>
+			</div>
+	      <div class="page-content">
+	        <div class="content-block">
+	        <center>
+	        	<h5 class="search_title search_area"></h5>
+	        </center>
+	      	<div class="list-block search_area">
+		      	<input type="hidden" name="" id="slink">
+		      	<input type="hidden" name="" id="sfunction">
+						<input type="hidden" name="" id="sdirectkey">
+						<ul id="dynamic_search_fields">
+
+						</ul>
+	      </div>
+	      <table width="100%" class="search_area">
+	      	<tr>
+	      		<td align="center" width="50%">
+	      			<input type="button" value="Search" class="button button-fill adv_search_btn">
+	      		</td>
+	      	</tr>
+	      </table>
+	        </div>
+	      </div>
+	    </div>
+	  <!--  End of search Popup -->
+
+	  <div class="popup" id="TimeCommentPopup">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="left sliding">
+					<a href="#" class="close-popup"><i class="fa fa-times" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	    <div class="content-block">
+	      	<div class="list-block">
+		  		<ul>
+				    <li>
+				      <div class="item-content">
+				        <div class="item-inner">
+				          <div class="item-input" style="padding:2px">
+				            <textarea id="time_popup_comment" rows="80" plcaeholder="Comment"></textarea>
+				          </div>
+				        </div>
+				      </div>
+				    </li>
+			    </ul>
+			     <div class="content-block">
+				    <center>
+				    	<a href="#" onclick="timedoSpeechRecognition()"><i class="fa fa-microphone mic_time" aria-hidden="true"></i></a>
+				    </center>
+			    </div>
+	    	</div>
+			<center>
+				<p> <a href="#" class="button button-fill" onclick="time_close_comment()" style="width:50%">Submit</a></p>
+			</center>
+	       	<center>
+	       		<p class="speak_mic_time" style="display:none">(Please Speak slowly)</p>
+	       		<img src="img/mic3.gif" class="speak_mic_time" style="display:none;width:60%">
+	       	</center>
+	    </div>
+  	</div>
+
+	<div class="picker-modal open_profile">
+	    <div class="toolbar">
+	      <div class="toolbar-inner">
+	        <div class="left slid"><i class="fa fa-users"></i> Servers</div>
+	        <div class="right"><a href="#" class="link close-picker"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+	      </div>
+	    </div>
+	    <div class="picker-modal-inner">
+	      <div class="content-block">
+	        <div id="account_list"></div>
+	      </div>
+	    </div>
+	</div>
+
+	<script type="text/javascript" id="ohm_template"></script>
+		<script id="law_tag_template" type="text/template7">
+			<div class="list-block">
+  				<ul>
+					{{#each LawTag}}
+						<li style="color:#fff;background-color:#F75D5D">
+					        <div class="item-inner">
+					          <div style="margin-left:10px;">{{lawtag}}<br\>{{reason}}</div>
+					          <div><a JSON_ID={{id}} LAW_ID={{lawtag}} style="color:#fff" onclick="delete_law_tag({{id}},{{lawtag}})">Remove</a></div>
+					        </div>
+					    </li>
+					    <li>
+					    	{{data}}
+					    </li>
+					{{/each}}
+				</ul>
+			</div>
+		</script>
+		 
+	<script type="text/javascript" src="js/framework7.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src='cordova.js'></script>
+	<!--script type="text/javascript" src="js/FCMPlugin.js"></script-->
+    <!--script src='barcodescanner.js'></script>
+	<script type="text/javascript">
+	    if (!navigator.userAgent.toLowerCase().match('chrome')) {
+	      document.write("<script src='cordova.js'><\/script>");
+	    }
+    </script-->
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/ohm_index.js"></script>
+	<script type="text/javascript" src="js/ohm_db.js"></script>
+	<!--script type="text/javascript" src="js/fcm_notification.js"/-->
+	<script type="text/javascript" src="js/setting.js"></script>
+	<script src="high_graph/highcharts.js"></script>
+	<script src="high_graph/highcharts-3d.js"></script>
+	<script src="high_graph/modules/exporting.js"></script>
+	<script src="high_graph/highcharts-more.js"></script>
+	<script type="text/javascript" src="js/ohm_highgraph.js"></script>
+	</body>
+</html>
+

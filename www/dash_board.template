@@ -1,0 +1,54 @@
+<script id="dashboard_page" type="text/template7">
+{{#if @global.ios}}
+<div class="navbar">
+    <div class="navbar-inner ">
+      <div class="left sliding">
+       <a href="#" class="link icon-only open-panel menu_icon"> <i class="f7-icons">bars</i></a>
+      </div>
+      <!--div class="center sliding">MY OHM</div-->
+      <div class="center sliding"><img src="img/myohm.png"/ class="navlogo"></div>
+      <div class="right sliding" id="right_options">
+      <a href="#" class="link icon-only logout"><i class="fa fa-power-off"></i></a>
+      <a class="link popup_menu"><i class="fa fa-ellipsis-v"></i></a>
+     </div>
+    <div class="subnavbar sliding dashboard_top">
+<div class="buttons-row">
+<div id="subnavbar_content">
+              
+</div>
+</div>
+</div>
+    </div>
+</div>
+{{/if}}
+ <div class="page" data-page="dashPage"> 
+  {{#if @global.android}}
+<div class="navbar">
+    <div class="navbar-inner ">
+      <div class="left sliding">
+          <a href="#" class="link icon-only open-panel menu_icon"> <i class="f7-icons">bars</i></a>
+      </div>
+      <!--div class="center sliding">MY OHM</div-->
+      <div class="center sliding"><img src="img/myohm.png"/ class="navlogo"></div>
+   <div class="right sliding" id="right_options">
+      <a href="#" class="link icon-only logout"><i class="fa fa-power-off"></i></a>
+      <a class="link popup_menu"><i class="fa fa-ellipsis-v"></i></a>
+     </div>
+</div>
+</div>
+{{/if}}
+   <div class="page-content">
+        <!-- Page content goes here -->
+		 <div class="content-block">
+        <div class="formmsg" style="display:none"></div>
+        <div id="data_content"></div>
+    </div>    
+  </div>
+      <div class="toolbar toolbar-bottom dashboard_bottom">
+        <div class="toolbar-inner">
+          <div id="toolbar_content">
+              
+          </div>
+        </div>
+      </div>
+</script>

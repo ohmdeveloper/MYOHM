@@ -1,0 +1,72 @@
+#time_entry_input{
+	border: 1px solid;
+    border-radius: 4px;
+}
+.timeSheetStart input{
+	padding-left: 4px !important;
+	border: 1px solid !important;
+	border-radius: 4px !important;
+}
+.time_entry_input input{
+	height: 33px !important;
+	padding-left: 4px !important;
+	border: 1px solid !important;
+	border-radius: 4px !important;
+}
+.time_entry_input select{
+	height: 33px !important;
+	padding-left: 4px !important;
+	border: 1px solid !important;
+	border-radius: 4px !important;
+}
+.time_entry_input textarea{
+	padding-left: 4px !important;
+	border: 1px solid !important;
+	border-radius: 4px !important;
+	width: 98%;
+}
+.time_entry_input .label,.timeSheetStart .label{
+	background: #069 !important;
+    height: 33px !important;
+    line-height: 33px !important;
+    padding-left: 4px !important;
+    color: #fff !important;
+}
+.validate_user_code,.add_line_item{
+	width:50% !important;
+}
+#timesheet_mainpage{
+	padding:10px;
+}
+.time_entry_input #time_comment_popup{
+    font-size: 35px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+#emp_code_review{
+	padding-left: 4px !important;
+	border: 1px solid !important;
+	border-radius: 4px !important;
+}
+.back{
+	color: #fff;
+}
+#time_popup_comment{
+	border: 1px solid;
+	border-radius: 5px;
+}
+#TimeCommentPopup .mic_time{
+	font-size: 40px;
+	padding-top: 5px;
+}
+#ReviewContent{
+	padding:15px;
+}
+.autocomplete-dropdown-inner .label-radio{
+	min-height: 35px !important;
+}
+.autocomplete-dropdown-inner .item-inner{
+	padding-top: 7px !important;
+    padding-bottom: 6px !important;
+    min-height: 35px !important;
+}

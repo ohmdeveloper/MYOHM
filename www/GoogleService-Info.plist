@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>231588571133-70emf154tod8q4pi2g1mmrhctqitakcf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.231588571133-70emf154tod8q4pi2g1mmrhctqitakcf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBh52lky61KOQVQcQG7bEGe9-YnDt2gYxg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>231588571133</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ohm.myohm</string>
+	<key>PROJECT_ID</key>
+	<string>my-ohm-a2ec4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>my-ohm-a2ec4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:231588571133:ios:a88d63d461665390</string>
+	<key>DATABASE_URL</key>
+	<string>https://my-ohm-a2ec4.firebaseio.com</string>
+</dict>
+</plist>

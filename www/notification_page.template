@@ -1,0 +1,35 @@
+<script id="notification_page" type="text/template7">
+{{#if @global.ios}}
+<div class="navbar">
+    <div class="navbar-inner ">
+      <div class="left sliding">
+       <img src="img/navbar_logo.png" class="nav_bar_logo"/>
+      </div>
+      <div class="center sliding">MY OHM</div>
+      <div class="right sliding">
+      <a href="#" class="link icon-only open-panel menu_icon"> <i class="f7-icons">bars</i></a>
+    </div>
+    </div>
+</div>
+{{/if}}
+ <div class="page" data-page="notificationPage">
+  {{#if @global.android}}
+<div class="navbar">
+    <div class="navbar-inner ">
+      <div class="left sliding">
+        <img src="img/navbar_logo.png" class="nav_bar_logo"/>
+      </div>
+      <div class="center sliding">MY OHM</div>
+      <div class="right sliding">
+      <a href="#" class="link icon-only open-panel menu_icon"> <i class="f7-icons">bars</i></a>
+    </div>
+</div>
+</div>
+{{/if}}
+   <div class="page-content">
+        <!-- Page content goes here -->
+		 <div class="content-block">
+        <div id="data_content"></div>
+    </div>    
+  </div>
+</script>

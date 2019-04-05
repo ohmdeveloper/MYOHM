@@ -1,0 +1,86 @@
+.navbar, .subnavbar, .toolbar{
+	/*background:#4b90b1;*/
+	/*background:#2196F3;*/
+	background:#F7F7F7; 
+	color:#000;
+}
+
+.panel{
+	/*background:#4b90b1;*/
+	/*background:#2196F3;*/
+	background:#F7F7F7;
+}
+
+/*#data_content .links a{
+	padding-right: 3px;
+    padding-left: 3px;
+    font-size: 15px;
+    color: #37474F;
+    padding-top: 2px;
+    padding-bottom: 2px;
+     border: 1px solid #607D8B;
+     margin-left: 3px;
+	font-weight:bold;
+	border-radius:3px;
+}*/
+
+#data_content .title1{
+	color:#fff;
+	background:#546E7A;
+	font-size: 18px;
+}
+
+#data_content table{
+	background:#CFD8DC;
+	color:#000;
+}
+
+.scan_tag,.get_law_tag{
+	width: 20%;
+    float: right;
+    margin-top: -37px;
+    /*line-height: 38px; */
+}
+.search_scan_tag{
+	width: 15%;
+    float: right;
+   /* margin-top: -29px;    */
+}
+
+.scan_view_tag{
+	width: 25%;
+    float: right;
+    margin-top: -37px;    
+}
+
+@media screen and (orientation:portrait) {
+	#data_content .links a {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		border-radius: 4px;
+	}
+}
+/*.navbar .right{
+    margin-right:10px;
+}*/
+a.button.button-fill.search_scan_tag{
+	margin-top:-35px;
+}
+.list-block li{
+	background-color:#fff;
+}
+.loginFrm li.item-content,.loginFrm li{
+	background-color:transparent;
+}
+.list-block input[type=text],.list-block input[type=number],.list-block select,.list-block textarea{
+	background:#fff;
+}
+#EnterPartDetails .content-block {
+    padding: 0px;
+}
+#law_tag_list .list-block li{
+	background-color:#fff;
+}
+.page{
+	background:#fff;
+}

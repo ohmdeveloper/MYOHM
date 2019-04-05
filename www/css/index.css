@@ -1,0 +1,127 @@
+@font-face {
+    font-family: SF-UI;
+    src: url(../fonts/SF-UI-Display/SF-UI-Display-light.otf);
+}
+@font-face {
+    font-family:Open-Sans;
+    src: url(../fonts/\Open_Sans/OpenSans-Regular.ttf);
+}
+
+body{
+	font-family:Open-Sans;
+	font-size: 18px;
+}
+.loginFrm{
+    background: url(../img/bg-white-lock.png) repeat;
+    padding-bottom: 5px;
+	padding-top: 5px;
+	margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #ccc;
+}
+.login-screen-content{ 
+	/*background-image: -ms-linear-gradient(bottom right, #013a4a 0%, #fff 100%);
+	background-image: -moz-linear-gradient(bottom right, #013a4a 0%, #fff 100%);
+	background-image: -o-linear-gradient(bottom right, #013a4a 0%, #fff 100%);
+	background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #013a4a), color-stop(100, #fff));
+	background-image: -webkit-linear-gradient(bottom right, #013a4a 0%, #fff 100%);
+	background-image: linear-gradient(200deg, #013a4a 0%, #fff 100%);*/
+	/*background: #1a5e71;*/
+	background: #c7c7c7;
+}
+.login-screen-title {
+    margin-top: 25% !important;
+}
+a#signIn {
+    width: 50%;
+    margin-left: 22.5%;
+	 background-color:#01579B;
+	font-size: 18px;
+	height: 48px !important;
+}
+input#user_name{
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+	padding: 10px;
+	font-size:18px;
+	font-weight:bold;
+}
+input#password{
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+	font-size:18px;
+	font-weight:bold;
+}
+input#middleware_ip {
+	background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+select#middleware_ip {
+	background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.list-block .item-inner:after{
+	background:none;
+}
+.statusbar-overlay{
+	background: #3a9df8;
+}
+#user_name::-webkit-input-placeholder {
+   color: #C72300;  
+}
+#user_name::-ms-input-placeholder {
+   color: #C72300;  
+}
+#password::-webkit-input-placeholder {
+   color: #C72300;  
+}
+#password::-ms-input-placeholder {
+   color: #C72300;  
+}
+#middleware_ip::-webkit-input-placeholder {
+   color: #C72300;  
+}
+#middleware_ip::-ms-input-placeholder {
+   color: #C72300;  
+}
+.token_page{
+	color:#fff;
+    float: right;
+    padding: 10px;
+}
+
+/*Need to be moved to servre side*/
+.save_setting{
+	width: 50%;
+}
+
+/*Welcome screen style*/
+.tutorial-screen-content{
+	/*background: #708090;*/
+	background: #792f31;
+	text-align: center;
+	color: #fff;
+}
+.tutorial_btn{
+	color: #fff;
+	text-decoration: underline;;
+}
+.welcome_screen{
+	margin-top: 15px;
+}
+.welcome_screen p{
+	text-align: justify;
+    padding: 10px;
+}

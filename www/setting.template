@@ -1,0 +1,49 @@
+<!-- Profile Setting Page-->
+<script id="setting_page" type="text/template7">
+{{#if @global.ios}}
+  <div class="navbar">
+    <div class="navbar-inner ">
+      <div class="left sliding">
+       <img src="img/navbar_logo.png" class="nav_bar_logo"/>
+      </div>
+      <!--div class="center sliding">MY OHM</div-->
+      <div class="center sliding"><img src="img/myohm.png"/ class="navlogo"></div>
+      <div class="right sliding">
+      <a href="#" class="link icon-only open-panel menu_icon"> <i class="f7-icons">bars</i></a>
+    </div>
+    </div>
+</div>
+{{/if}}
+<div data-page="settingPage" class="page">
+{#if @global.android}}
+ <div class="navbar">
+    <div class="navbar-inner ">
+      <div class="left sliding">
+        <img src="img/navbar_logo.png" class="nav_bar_logo"/>
+      </div>
+      <div class="center sliding">MY OHM</div>
+      <div class="right sliding">
+      <a href="#" class="link icon-only open-panel menu_icon"> <i class="f7-icons">bars</i></a>
+    </div>
+</div>
+</div>
+  {{/if}}
+<!-- Scrollable page content-->
+  <div class="page-content">
+  <form id="data_form">
+    <div class="content-block">
+      <div class="list-block">
+        <ul id="setting_links">
+        </ul>
+      </div>
+      <div class="list-block">
+        <ul id="setting_data">
+        </ul>
+      </div>
+      <center><a class="button button-fill save_setting">Save</a></center>
+    </div>
+    </form>
+  </div>
+</div>
+<!-- Profile setting page close-->
+      

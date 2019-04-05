@@ -1,0 +1,43 @@
+<script id="home_Page" type="text/template7">
+{{#if @global.ios}}
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left sliding">
+			<img src="img/navbar_logo.png" class="nav_bar_logo"/>
+		</div>
+		<div class="center sliding">MY OHM</div>
+		<!--div class="right sliding">
+			<a href="#" class="menu_icon" onclick="logout()"> <i class="fa fa-power-off" aria-hidden="true"></i></a>
+		</div-->
+		<div class="right sliding">
+			<a href="#" class="link icon-only open-panel menu_icon"><i class="f7-icons">bars</i></a>
+		</div>
+	</div>
+</div>
+{{/if}}
+ 	<div data-page="homePage" class="page">
+  {{#if @global.android}}
+  <div class="navbar">
+	<div class="navbar-inner">
+		<div class="left sliding">
+			<img src="img/navbar_logo.png" class="nav_bar_logo"/>
+		</div>
+		<div class="center sliding">MY OHM</div>
+		<!--div class="right sliding">
+			<a href="#" class="menu_icon" onclick="logout()"> <i class="fa fa-power-off" aria-hidden="true"></i></a>
+		</div-->
+		<div class="right sliding">
+			<a href="#" class="link icon-only open-panel menu_icon"><i class="f7-icons">bars</i></a>
+		</div>
+	</div>
+</div>
+{{/if}}
+		<div class="page-content">
+			<div class="content-block">
+				<div id="home_page_content"></div>
+				<div id='div_imgGraph1'></div>
+			</div>
+		</div>
+	</div>
+</div>
+	 

@@ -1,0 +1,81 @@
+.navbar, .subnavbar, .toolbar{
+	background:#00838F;
+	color:#fff;
+}
+
+.navbar .center, .subnavbar .center{
+	text-align: center;
+    width: 90%;
+}
+.panel{
+	background:#006064;
+}
+
+#data_content .links a{
+	padding-right: 3px;
+    padding-left: 3px;
+    font-size: 13px;
+    color: #006064;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid #006064;
+    margin-left: 3px;
+	font-weight:bold;
+	border-radius:3px;
+}
+
+#data_content .title1{
+	color:#fff;
+	background:#006064;
+	font-size: 18px;
+}
+
+#data_content table{
+	background:#CFD8DC;
+	color:#000;
+}
+
+#law_tag_list table{
+	background:#FBE9E7;
+}
+
+@media screen and (orientation:portrait) {
+	.navbar .center, .subnavbar .center {
+		width: 50%;
+	}
+	#data_content .links a {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		border-radius: 4px;
+	}
+}
+
+.scan_tag,.get_law_tag{
+	width: 20%;
+    float: right;
+    line-height: 38px;
+    margin-top: -37px;  
+	min-width: 50px;
+}
+.search_scan_tag{
+	width: 15%;
+    float: right;
+   /* margin-top: -29px;    */
+}
+
+
+.scan_view_tag{
+	width: 25%;
+    float: right;
+    margin-top: -41px;    
+}
+
+.popup  .left {
+    margin-left: 8px;
+}
+a.button.button-fill.search_scan_tag{
+	margin-top:-40px;
+}
+.modal{
+	color:#000;
+}
