@@ -107,7 +107,7 @@ function gather_data(){
 	);
 	save_setting_page(iform)
 }
-
+/*this is test*/ 
 function save_setting_page(iform){
 	var sURL = sMiddlewareIP+"setting.jsp?mobile_key="+localStorage["myohm_session"]+"&data="+iform+"&directkey="+sSetting_key;
 	$.ajax({
